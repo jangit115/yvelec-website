@@ -1,6 +1,6 @@
 # Yvelec
 
-> Yvelec SRL est une entreprise générale d'électricité tertiaire et industrielle fondée en 1994 par Yves Dauginet, établie à Noville-les-Bois (Fernelmont, province de Namur, Belgique). Elle intervient en Wallonie et en Région de Bruxelles-Capitale pour les entreprises, commerces, collectivités et particuliers.
+> Yvelec SRL est une entreprise générale d'électricité spécialisée dans le tertiaire et l'industrie, fondée en 1994 par Yves Dauginet, établie à Noville-les-Bois (Fernelmont, province de Namur, Belgique). Elle intervient en Wallonie et en Région de Bruxelles-Capitale pour les entreprises, commerces, collectivités et particuliers.
 
 ## Services
 

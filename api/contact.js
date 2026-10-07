@@ -27,6 +27,39 @@ function reply(req, res, status, body) {
   return res.status(status).json(body);
 }
 
+// Notification e-mail via Resend, uniquement si RESEND_API_KEY, CONTACT_NOTIFY_TO et
+// CONTACT_NOTIFY_FROM sont définis. Un échec n'empêche pas l'enregistrement de la demande.
+async function notify(row) {
+  const { RESEND_API_KEY, CONTACT_NOTIFY_TO, CONTACT_NOTIFY_FROM } = process.env;
+  if (!RESEND_API_KEY || !CONTACT_NOTIFY_TO || !CONTACT_NOTIFY_FROM) return;
+  const text = [
+    `Nom : ${row.nom}`,
+    `Société : ${row.societe || '-'}`,
+    `E-mail : ${row.email}`,
+    `Téléphone : ${row.telephone || '-'}`,
+    `Type de projet : ${row.type_projet || '-'}`,
+    `Page : ${row.page || '-'}`,
+    '',
+    row.message,
+  ].join('\n');
+  try {
+    const r = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${RESEND_API_KEY}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        from: CONTACT_NOTIFY_FROM,
+        to: CONTACT_NOTIFY_TO.split(',').map((s) => s.trim()),
+        reply_to: row.email,
+        subject: `Nouvelle demande via yvelec.be : ${row.nom}${row.societe ? ` (${row.societe})` : ''}`,
+        text,
+      }),
+    });
+    if (!r.ok) console.error('Resend failed', r.status, await r.text());
+  } catch (err) {
+    console.error('Resend error', err);
+  }
+}
+
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
@@ -72,5 +105,6 @@ module.exports = async function handler(req, res) {
     return reply(req, res, 502, { error: "L'envoi a échoué. Appelez-nous au 081 51 25 15 ou écrivez à info@yvelec.be." });
   }
 
+  await notify(row);
   return reply(req, res, 200, { ok: true });
 };

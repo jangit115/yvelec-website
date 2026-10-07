@@ -4,10 +4,13 @@ Site vitrine de Yvelec SRL (Fernelmont), entreprise générale d'électricité t
 
 ## Stack
 - HTML/CSS statique, styles inline et dans `<style>`. Pas de framework, pas de build.
-- Pages : `index.html` (accueil) et `services/<slug>.html` (une page par service, même header/footer : toute modification du header/footer se fait dans tous les fichiers).
-- Hébergement prévu : Vercel (`vercel.json`, `cleanUrls` : `/services/photovoltaique` sert `services/photovoltaique.html`). Liens internes absolus (`/services/...`, `/assets/...`) : ils ne fonctionnent pas en ouvrant le fichier en local, utiliser un déploiement preview Vercel ou `vercel dev`.
-- Formulaire de contact : `index.html` POST vers `api/contact.js` (fonction Vercel) qui insère dans la table Supabase `contact_requests` (`supabase/migrations/`). Variables d'environnement Vercel : `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`. La clé secrète ne doit jamais apparaître dans le HTML.
-- `.vercelignore` exclut `CLAUDE.md`, `supabase/` et `.env.example` de la publication.
+- Positionnement : spécialiste de l'électricité tertiaire et industrielle (section `#specialiste`, hero, meta, JSON-LD `slogan`, FAQ).
+- Pages : `index.html` (accueil), `services/<slug>.html` (une page par service), `confidentialite.html`, `mentions-legales.html`. Même header/footer et menu mobile (`.mnav`) partout : toute modification du header/footer se fait dans tous les fichiers.
+- Hébergement prévu : Vercel (`vercel.json`, `cleanUrls` : `/services/photovoltaique` sert `services/photovoltaique.html`). Liens internes absolus (`/services/...`, `/assets/...`) : ne fonctionnent pas en ouvrant le fichier directement.
+- Preview locale : `py dev/serve.py` puis http://localhost:4321. Imite `cleanUrls` et simule `/api/contact` sans Supabase (demandes écrites dans `dev/submissions.jsonl`, ignoré par git).
+- Formulaire de contact : `index.html` POST vers `api/contact.js` (fonction Vercel) qui insère dans la table Supabase `contact_requests` (`supabase/migrations/`). Variables d'environnement Vercel : `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, et optionnellement `RESEND_API_KEY`, `CONTACT_NOTIFY_TO`, `CONTACT_NOTIFY_FROM` pour la notification e-mail. La clé secrète ne doit jamais apparaître dans le HTML.
+- `.vercelignore` exclut `CLAUDE.md`, `supabase/`, `dev/` et `.env.example` de la publication.
+- Les pages confidentialité et mentions légales sont des projets : les `[À COMPLÉTER]` doivent être remplis et validés avant la mise en ligne.
 - Ne rien publier en ligne sans accord explicite de Jan.
 
 ## Charte graphique 2026 (à respecter strictement)
