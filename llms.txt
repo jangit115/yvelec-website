@@ -1,0 +1,39 @@
+# Yvelec
+
+> Yvelec SRL est une entreprise générale d'électricité tertiaire et industrielle fondée en 1994 par Yves Dauginet, établie à Noville-les-Bois (Fernelmont, province de Namur, Belgique). Elle intervient en Wallonie et en Région de Bruxelles-Capitale pour les entreprises, commerces, collectivités et particuliers.
+
+## Services
+
+- Électricité générale : éclairage et puissance pour bâtiments neufs ou en rénovation, tableaux divisionnaires, mises en conformité
+- Armoires électriques : conception, câblage et mise en service d'armoires BT sur mesure, en atelier ou sur site
+- Câblage réseau data : cuivre et fibre, baies et armoires data, certification des liaisons
+- Contrôle d'accès, détection intrusion, détection incendie, vidéosurveillance
+- Domotique et KNX : gestion technique du bâtiment
+- Photovoltaïque : installations solaires pour entreprises et particuliers
+
+## Secteurs
+
+- Tertiaire (bureaux, banques, télécoms, bâtiments de services)
+- Industrie (ateliers, entrepôts, sites de production)
+- Collectivités (communes, écoles, institutions)
+- Particuliers
+
+## Contact
+
+- Adresse : Rue Léopold Genicot 3, 5380 Noville-les-Bois (Fernelmont), Belgique
+- Téléphone : +32 81 51 25 15
+- E-mail : info@yvelec.be
+- TVA : BE 0451.783.240
+
+## Pages
+
+- [Accueil](https://www.yvelec.be/): présentation, services, secteurs, méthode, FAQ et contact
+- [Électricité générale](https://www.yvelec.be/services/electricite-generale): Éclairage et puissance pour bâtiments neufs ou en rénovation, tableaux divisionnaires, mises en conformité.
+- [Armoires électriques](https://www.yvelec.be/services/armoires-electriques): Conception, câblage et mise en service d’armoires BT sur mesure, en atelier ou sur site.
+- [Câblage réseau data](https://www.yvelec.be/services/cablage-reseau-data): Infrastructure cuivre et fibre, baies et armoires data, certification des liaisons.
+- [Contrôle d’accès](https://www.yvelec.be/services/controle-acces): Badges, lecteurs et gestion centralisée des accès pour vos sites et bureaux.
+- [Détection intrusion](https://www.yvelec.be/services/detection-intrusion): Systèmes d’alarme certifiés, détection périmétrique et volumétrique, télésurveillance.
+- [Détection incendie](https://www.yvelec.be/services/detection-incendie): Centrales, détecteurs et signalisation conformes aux normes, en bâtiment tertiaire et industriel.
+- [Vidéosurveillance](https://www.yvelec.be/services/videosurveillance): Caméras IP et enregistrement, partenaire Avigilon, accès à distance sécurisé.
+- [Domotique et KNX](https://www.yvelec.be/services/domotique-knx): Gestion technique du bâtiment : éclairage, stores, chauffage et consommation, partenaire KNX.
+- [Photovoltaïque](https://www.yvelec.be/services/photovoltaique): Installations solaires pour entreprises et particuliers, raccordement et suivi de production.

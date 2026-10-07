@@ -1,0 +1,30 @@
+# Yvelec : moteurs de recherche et moteurs de réponse IA autorisés
+User-agent: *
+Allow: /
+
+# Crawlers IA (citation dans ChatGPT, Claude, Perplexity, Gemini, Copilot)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://www.yvelec.be/sitemap.xml
